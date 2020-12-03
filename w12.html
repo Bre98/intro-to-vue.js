@@ -1,0 +1,144 @@
+<!-- code 01 of week12-->
+<html>
+<title>Week 12 Code</title>
+<head>
+<style>
+    #t1, td{
+    
+        border: 5px solid black
+    }
+</style>
+</head>
+<body>
+<h2>Code 01 of Week 12</h2>
+<table id='t1'>
+    <tr>
+        <td>C1</td>
+        <td>C2</td>
+    </tr>
+
+    <tr>
+        <td>C3</td>
+        <td>C4</td>
+    </tr>
+    <tr>
+        <td>C5</td>
+        <td>C6</td>
+    </tr>
+
+</table>
+<script>
+    var x = document.getElementById('t1').rows.length;
+    document.write('<br>');
+    document.write('Number of Rows in the table are ' + x);
+    document.write('<br>')
+    alert(document.getElementById('t1').rows[0].cells[0].innerHTML);
+</script>
+
+</body>
+</html>
+<!--Code 02 od week 12-->
+<html>
+<head><script src="https://unpkg.com/vue"></script></head>
+<body>
+<h2> Code 02 of Week 12</h2>
+<div id= "app">
+    <p> {{message}} </p>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            message: "Hello World"
+        }
+    });
+</script>
+
+</div>
+
+
+
+</body>
+
+</html>
+
+<!--code 03 of week 12-->
+<html>
+<head><script src="https://unpkg.com/vue"></script></head>
+<body>
+<h2> Code 02 of Week 12</h2>
+<div id= "app1">
+    <p> {{hello}} </p>
+<script>
+    new Vue({
+        el: "#app1",
+        data: {
+            hello: "Hello World"
+        }
+    });
+</script>
+
+</div>
+</body>
+</html>
+
+<!-- Code 04-->
+<html>
+<head><script src="https://unpkg.com/vue"></script></head>    
+<body>
+<h2>Code 04 of week 12</h2>
+<div id ='d2'>
+    <ul>
+        <li v-for="x in todos">
+            {{x.text}}
+        </li>
+
+    </ul>
+</div>
+<script>
+    new Vue({
+        el: '#d2',
+        data: {
+            todos:[
+                {text:'Learn HTML'},
+                {text:'Learn CSS'},
+                {text: 'Learn JS'}
+
+
+            ]
+        }
+    });
+</script>
+</body>
+</html>
+
+<!--week 2 alone-->
+<html>
+<head><script src="https://unpkg.com/vue"></script></head>    
+<body>
+<h2>Ordered List</h2>
+<div id ='d3'>
+    <ol>
+        <li v-for="x in classes">
+            {{x.text}}
+        </li>
+
+    </ol>
+</div>
+<script>
+    new Vue({
+        el: '#d3',
+        data: {
+            classes:[
+                {text:'CIS 2336'},
+                {text:'CIS 3343'},
+                {text:'CIS 3365'},
+                {text:'CIS 2334'}
+    
+
+
+            ]
+        }
+    });
+</script>
+</body>
+</html>
