@@ -1,2 +1,2 @@
 # intro-to-vue.js
-A simple introduction toe Vue.js framwork
+A simple introduction toe Vue.js framework
